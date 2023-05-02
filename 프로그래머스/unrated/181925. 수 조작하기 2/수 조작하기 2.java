@@ -1,18 +1,12 @@
 class Solution {
     public String solution(int[] numLog) {
-int length = numLog.length;
-        int presentValue = numLog[0];
         String answer = "";
-
-        for (int i = 1; i < length; i++) {
-            int judge = numLog[i] - numLog[i - 1];
-
-            switch (judge) {
-                case 1 -> answer += "w";
-                case -1 -> answer += "s";
-                case 10 -> answer += "d";
-                case -10 -> answer += "a";
-            }
+        for (int i=0; i<numLog.length-1;i++) {
+            int a = numLog[i+1] - numLog[i];
+            if (a > 1) answer += "d";
+            else if (a == 1) answer += "w";
+            else if (a < -1) answer += "a";
+            else answer += "s";
         }
         return answer;
     }
