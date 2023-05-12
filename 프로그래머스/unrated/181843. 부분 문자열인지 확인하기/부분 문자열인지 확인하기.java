@@ -1,10 +1,9 @@
 class Solution {
     public int solution(String my_string, String target) {
-        target = "(.*)" + target + "(.*)";
-        if(my_string.matches(target)) {
+        if (my_string.contains(target)){
             return 1;
-        } else {
-            return 0;
-        }
+        } else{
+            return 0;    
+        }   
     }
 }
