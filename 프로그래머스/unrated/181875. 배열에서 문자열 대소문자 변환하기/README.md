@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 72.9 MB, 시간: 0.06 ms
+메모리: 78.5 MB, 시간: 0.06 ms
 
 ### 구분
 
@@ -27,7 +27,7 @@ Empty
 
 <ul>
 <li>1 ≤ <code>strArr</code>의 원소의 길이 ≤ 20</li>
-<li><code>strArr</code>의 모든 원소는 알파벳 소문자로 이루어져 있습니다.</li>
+<li><code>strArr</code>의 원소는 알파벳으로 이루어진 문자열 입니다.</li>
 </ul></li>
 </ul>
 
@@ -67,6 +67,8 @@ Empty
 <li><code>strArr[1]</code>은 홀수번째 인덱스의 문자열이므로 대문자로 바꿔서 "ABC"가 됩니다.</li>
 <li>따라서 ["abc","ABC"]를 return 합니다.</li>
 </ul>
+
+<p>※ 2023년 05월 15일 제한사항이 수정되었습니다.</p>
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
