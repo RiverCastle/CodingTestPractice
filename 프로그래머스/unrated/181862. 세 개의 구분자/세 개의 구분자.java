@@ -1,27 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 class Solution {
-    public List<String> solution(String myStr) {
-        String[] splitters = new String[] {"a", "b", "c"};
-
-        for (String splitter : splitters) {
-            myStr = myStr.replaceAll(splitter, " ");
-        }
-
-        String[] splitted = myStr.split(" ");
-
-        List<String> answer = new ArrayList<>();
-        
-        for (String element : splitted) {
-            if (!element.equals("")) {
-                answer.add(element);
-            }
-        }
-        if (answer.size() == 0) {
-            answer.add("EMPTY");
-        }
-        
-        return answer;
+    public String[] solution(String myStr) {
+        String[] arr = Arrays.stream(myStr.split("[abc]+")).filter(str -> !str.isEmpty()).toArray(String[]::new);
+        return arr.length == 0 ? new String[] { "EMPTY" } : arr;
     }
 }
