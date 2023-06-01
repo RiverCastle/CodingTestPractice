@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        HashMap<String, Integer> hashMap = new HashMap<>(10);
+        HashMap<String, Integer> hashMap = new HashMap<>(50000);
         int filesNum = Integer.parseInt(bufferedReader.readLine());
         for (int i = 0 ; i < filesNum; i++) {
             String[] fileName = bufferedReader.readLine().split("\\.");
