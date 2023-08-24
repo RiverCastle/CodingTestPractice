@@ -1,2 +1,3 @@
-# BaekjoonPS
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# Baekjoon Oneline Judge
+
+프로그래밍에 빠르게 익숙해지기 위해서 매일 1문제 이상 풀고 있습니다.
