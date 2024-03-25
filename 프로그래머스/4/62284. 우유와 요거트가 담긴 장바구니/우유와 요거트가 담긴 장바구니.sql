@@ -1,0 +1,10 @@
+-- 코드를 입력하세요
+WITH MilkNYogurt AS (
+    SELECT CART_ID, GROUP_CONCAT(NAME) AS LIST
+    FROM CART_PRODUCTS 
+    GROUP BY CART_ID
+    HAVING LIST LIKE '%Milk%Yogurt%' or LIST LIKE '%Yogurt%Milk%')
+    
+SELECT CART_ID
+FROM MilkNYogurt
+ORDER BY CART_ID;
