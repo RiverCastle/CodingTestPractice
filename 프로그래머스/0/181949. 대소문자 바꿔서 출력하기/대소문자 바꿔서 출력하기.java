@@ -8,9 +8,9 @@ public class Solution {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < a.length(); i++) {
             if ('a' <= a.charAt(i) & a.charAt(i) <= 'z') {
-                sb.append(a.substring(i, i+1).toUpperCase());
+                sb.append(Character.toUpperCase(a.charAt(i)));
             } else {
-                sb.append(a.substring(i, i+1).toLowerCase());
+                sb.append(Character.toLowerCase(a.charAt(i)));
             }
         }
         System.out.println(sb.toString());
